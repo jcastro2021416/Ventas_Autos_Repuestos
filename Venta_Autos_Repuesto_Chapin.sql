@@ -62,9 +62,9 @@ Constraint FK_Vehiculo_Clientes Foreign key (CodCliente) References Clientes (co
 
 Create Table Factura(
 	idFactura int auto_increment not null,
-    fechaFactura Varchar(45),
+    FechaFactura Varchar(45),
+    PrecioTotal double(10,2),
     codCliente int not null,
-    id Varchar(45),
 Primary key PK_idFactura (idFactura),
 Constraint FK_Factura_Clientes Foreign key (codCliente) References Clientes (codCliente)
 );
