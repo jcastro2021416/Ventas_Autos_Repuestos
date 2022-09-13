@@ -63,8 +63,8 @@ Constraint FK_Vehiculo_Clientes Foreign key (CodCliente) References Clientes (co
 Create Table Factura(
 	idFactura int auto_increment not null,
     fechaFactura Varchar(45),
+    totalFactura double(10,2),
     codCliente int not null,
-    id Varchar(45),
 Primary key PK_idFactura (idFactura),
 Constraint FK_Factura_Clientes Foreign key (codCliente) References Clientes (codCliente)
 );
@@ -111,8 +111,8 @@ Insert into Empleados(idEmpleados, DNI, nombres, apellidos, direccion, telefono,
 Insert into Vehiculos(matricula, marca, modelo, color, codCliente)
 	Values ("P489CFG", "Nissan", "Skyline","Azul", 123 );
 
-Insert into Factura(fechaFactura, codCliente, id)
-	Values ("10-01-2022", 123, "No se");
+Insert into Factura(fechaFactura, totalFactura, codCliente)
+	Values ("10-01-2022", 123.00, "123");
     
 Insert into Reparaciones(idFactura, fechaEntrega, km, fechaSalida, observaciones, estado, idEmpleados)
 	Values (1, "2022-08-12", 10000, "2022-08-20", "Hacerle mantenimiento pronto", 00, 001);
