@@ -12,17 +12,17 @@ package modelo;
 public class Factura {
     private int idFactura;
     private String fechaFactura;
+    private double totalFactura;
     private int codCliente;
-    private String id;
 
     public Factura() {
     }
 
-    public Factura(int idFactura, String fechaFactura, int codCliente, String id) {
+    public Factura(int idFactura, String fechaFactura, double totalFactura, int codCliente) {
         this.idFactura = idFactura;
         this.fechaFactura = fechaFactura;
+        this.totalFactura = totalFactura;
         this.codCliente = codCliente;
-        this.id = id;
     }
 
     public int getIdFactura() {
@@ -41,6 +41,14 @@ public class Factura {
         this.fechaFactura = fechaFactura;
     }
 
+    public double getTotalFactura() {
+        return totalFactura;
+    }
+
+    public void setTotalFactura(double totalFactura) {
+        this.totalFactura = totalFactura;
+    }
+
     public int getCodCliente() {
         return codCliente;
     }
@@ -48,16 +56,5 @@ public class Factura {
     public void setCodCliente(int codCliente) {
         this.codCliente = codCliente;
     }
-
-    public String getId() {
-        return id;
-    }
-
-    public void setId(String id) {
-        this.id = id;
-    }
-    
-    
-    
-    
+ 
 }
