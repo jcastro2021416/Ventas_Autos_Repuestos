@@ -5,10 +5,22 @@
  */
 package modelo;
 
+import config.Conexion;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
 /**
  *
  * @author juani
  */
 public class FacturaDAO {
+    Conexion conect = new Conexion();
+    Connection con;
+    PreparedStatement ps; 
+    ResultSet rs;
+    Factura nFactura = new Factura();
+    
+    
     
 }
