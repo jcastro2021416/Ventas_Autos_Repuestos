@@ -120,6 +120,9 @@ Insert into Reparaciones(idFactura, fechaEntrega, km, fechaSalida, observaciones
 Insert into DetalleFactura(especificación, idFactura, idRespuestos)
 	Values ("no se", 1, 1);
     
+Select * from Repuestos;
+Select * from Vehiculos;
+    
 
 
 
