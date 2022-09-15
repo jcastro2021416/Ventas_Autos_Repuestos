@@ -5,13 +5,17 @@
  */
 package interfaces;
 
+import java.util.List;
+import modelo.Factura;
+
 /**
  *
  * @author informatica
  */
 public interface CRUD {
-    public interface CRUD{
-        
-    }
+    public List listar();
+    public Factura list(int id);
+    public boolean add(Factura  fac);
+    public boolean edit(Factura fac); 
     
 }
