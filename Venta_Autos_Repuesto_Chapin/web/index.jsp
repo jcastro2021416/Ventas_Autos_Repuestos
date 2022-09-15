@@ -31,7 +31,7 @@
                                 <CENTER><font color="blue"><font size="3">Bombillas</font></font></CENTER>
                                 <CENTER><font color="blue"><font size="3">Neumáticos</font></font></CENTER>
                                 <CENTER><font color="blue"><font size="3">Bujías</font></font></CENTER>
-                                <CENTER><font color="blue"><font size="3">Embrague</font></font></CENTER>
+                                <CENTER><font color="blue"><font size="3">Embragues</font></font></CENTER>
                             </div>
                             <div class="form-group">
                                 <label><U><B><font color="red">*AUTOS</font></B></U></label>
