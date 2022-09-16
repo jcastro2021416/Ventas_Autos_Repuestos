@@ -18,4 +18,9 @@ public class Conexion {
     }
         return conexion; 
     }
+
+    public Connection getConnection() {
+        return conexion;
+    }
+    
 }

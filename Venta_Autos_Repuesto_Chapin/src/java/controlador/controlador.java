@@ -7,16 +7,27 @@ package controlador;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import modelo.Factura;
+import modelo.FacturaDAO;
 
 /**
  *
  * @author USER
  */
-public class controlador extends HttpServlet {
+public class Controlador extends HttpServlet {
+    String listar ="view/facturaView.jsp"; // COMPLETAR
+    String add ="web/Empleado.jsp";
+    String edit="";
+    Factura nuevaFactura = new Factura();
+    FacturaDAO nuevaFacturaDAO = new FacturaDAO();
+    int idFactura;
+    
+    
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code> methods.
@@ -56,6 +67,44 @@ public class controlador extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         processRequest(request, response);
+        String acceso = "";
+        String action = request.getParameter("accion");
+        if (action.equalsIgnoreCase("listar")){
+            acceso = listar;
+        }else if(action.equalsIgnoreCase("add")){
+            acceso = add;
+        }else if(action.equalsIgnoreCase("Agregar")){ //AGREGAR
+            String fFactura = request.getParameter("txtFecha");
+            String tFactura = request.getParameter("txtTotal");
+            String cCliente = request.getParameter("txtCliente");
+            nuevaFactura.setFechaFactura(fFactura);
+            nuevaFactura.setTotalFactura(Double.parseDouble(tFactura));
+            nuevaFactura.setCodCliente(Integer.parseInt(cCliente));  
+            nuevaFacturaDAO.add(nuevaFactura);
+            acceso = listar;
+            
+        }else if(action.equalsIgnoreCase("")){ //EDITAR
+            request.setAttribute("codFac", request.getParameter("idFactura"));
+            
+        }else if(action.equalsIgnoreCase("")){ //ACTUALIZAR
+            idFactura = Integer.parseInt(request.getParameter(""));
+            String fechaFactura = request.getParameter("");
+            String totalFactura = request.getParameter("");
+            String codCliente = request.getParameter("");
+            nuevaFactura.setFechaFactura(fechaFactura);
+            nuevaFactura.setTotalFactura(idFactura); // cambiar idfactura por TotalFactura 
+            nuevaFactura.setCodCliente(idFactura); // cambiar id factura por codCliente
+            nuevaFacturaDAO.edit(nuevaFactura);
+            acceso = listar;
+             
+       }     
+        RequestDispatcher vista = request.getRequestDispatcher(acceso);
+        vista.forward(request, response);
+    
+            
+        
+        
+        
     }
 
     /**
