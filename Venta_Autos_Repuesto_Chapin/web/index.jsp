@@ -22,7 +22,7 @@
                         <form class="form-sign" action="Validar" method="POST">
                             <div class="form-group text-center">
                                 <h3>Asesorías</h3>
-                                <img src="img/Asset-2.png" alt="60" width="120"/><br>
+                                <img src="img/Asset-2.png" alt="50" width="110"/><br>
                                 <label>Estimado cliente, ¿Cómo podemos brindarle ayuda?</label>
                             </div>
                             <div class="form-group">
