@@ -19,7 +19,7 @@ public class Conexion {
         return conexion; 
     }
 
-    public Connection getConexion() {
+    public Connection getConnection() {
         return conexion;
     }
     
