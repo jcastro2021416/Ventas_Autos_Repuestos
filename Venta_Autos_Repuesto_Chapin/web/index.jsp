@@ -16,7 +16,7 @@
         <style>
             body {background-color: #fc7404;}
         </style>
-            <div class="container mt-5 col-lg-5">
+            <div class="container mt-4 col-lg-5">
                 <div class="card col-sm-10">
                     <div class="card-body">
                         <form class="form-sign" action="Validar" method="POST">
