@@ -20,7 +20,7 @@ import modelo.FacturaDAO;
  * @author USER
  */
 public class Controlador extends HttpServlet {
-    String listar ="view/facturaView.jsp"; // COMPLETAR
+    String listar ="facturaView.jsp"; // COMPLETAR
     String add ="web/Empleado.jsp";
     String edit="";
     Factura nuevaFactura = new Factura();
