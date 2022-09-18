@@ -166,6 +166,11 @@ img:hover{
   table {
   background-color: transparent;
 }
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
 
 .form-control{
     display: block;
