@@ -107,6 +107,12 @@ img:hover{
     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
 
+.text{
+    color: #040404;
+    font-family: "Trebuchet MS";
+    text-decoration: none;
+}
+
 .form-control{
     display: block;
     width: 100%;
