@@ -43,7 +43,13 @@
     border: 2px solid;
 }
 
-
+.button:active{
+    background-color: #a4948c;
+    border-color: #252321;
+    text-decoration: none;
+    border: 2px solid;
+    color: #8c6964;
+}
 
 .button:active:after{
     padding: 0;
