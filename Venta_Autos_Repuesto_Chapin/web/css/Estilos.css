@@ -51,12 +51,7 @@
     color: #8c6964;
 }
 
-.button:active:after{
-    padding: 0;
-    margin: 0;
-    opacity: 1;
-    transition: 0s
-}
+
 
 .disabled{
     opacity: 0.6;
