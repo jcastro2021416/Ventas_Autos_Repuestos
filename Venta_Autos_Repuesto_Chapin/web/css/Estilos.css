@@ -59,6 +59,13 @@
     text-decoration: none;
 }
 
+.button1:hover{
+    background-color:  #695654;
+    color: #0c0404;
+    text-decoration: none;
+    border: 2px solid;
+}
+
 img{
     border: 1px solid #ddd;
     border-radius: 4px;
