@@ -226,6 +226,22 @@ img:hover{
   border-bottom-width: 2px;
 }
 
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #a89c94;
+}
+
+table col[class*="col-"] {
+  position: static;
+  display: table-column;
+  float: none;
+}
+table td[class*="col-"],
+table th[class*="col-"] {
+  position: static;
+  display: table-cell;
+  float: none;
+}
+
 .form-control{
     display: block;
     width: 100%;
