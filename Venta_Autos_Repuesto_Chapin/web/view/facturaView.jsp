@@ -22,7 +22,7 @@
             <div class="col-lg-5">
                 <h1>Agregar Factura</h1>
                 <br><br>
-                <form action="Controlador">
+                <form action="Controlador?menu=Factura" mothod="POST">
                     <strong>Fecha:</strong><br>
                     <input class="form-control" type="text" name="txtFecha" placeholder="YYYY-MM-DD"></input><br><br>
                     <strong>TotalFactura:</strong><br>
@@ -49,19 +49,19 @@
                         FacturaDAO dao = new FacturaDAO();
                         List<Factura> listaFactura = dao.listar();
                         Iterator<Factura> iterator = listaFactura.iterator();
-                        Factura per = null;
+                        Factura fac = null;
                         while(iterator.hasNext()){
-                            per = iterator.next();
+                            fac = iterator.next();
                         }
                     %>
                     <tbody>
                         <tr>
-                            <td class="text-center active"><%= per.getIdFactura()%></td>
-                            <td class="text-center"><%= per.getFechaFactura()%></td>
-                            <td class="text-center active"><%= per.getTotalFactura()%></td>                            
-                            <td class="text-center"><%= per.getCodCliente()%></td>
+                            <td class="text-center active"><%= fac.getIdFactura()%></td>
+                            <td class="text-center"><%= fac.getFechaFactura()%></td>
+                            <td class="text-center active"><%= fac.getTotalFactura()%></td>                            
+                            <td class="text-center"><%= fac.getCodCliente()%></td>
                             <td class="text-center">
-                                <a class="btn btn-warning">Edit</a>
+                                <a class="btn btn-warning" href="Controlador?accion=editar&idFactura">Edit</a>
                             </td>
                         </tr>
                     </tbody>>

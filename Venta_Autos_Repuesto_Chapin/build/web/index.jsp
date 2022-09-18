@@ -14,6 +14,6 @@
     </head>
     <body>
         <a class="btn btn-success btn-lg btn-block"href="Controlador?accion=listar">Factura</a>
-        <a class="btn btn-success btn-lg btn-block"href="Controlador?accion=add">add</a>
+        <a class="btn btn-success btn-lg btn-block"href="Controlador?accion=edit">add</a>
     </body>
 </html>

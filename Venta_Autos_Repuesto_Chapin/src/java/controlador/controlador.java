@@ -22,7 +22,7 @@ import modelo.FacturaDAO;
 public class Controlador extends HttpServlet {
     String listar ="facturaView.jsp"; // COMPLETAR
     String add ="web/Empleado.jsp";
-    String edit="";
+    String edit="view/editarFactura";
     Factura nuevaFactura = new Factura();
     FacturaDAO nuevaFacturaDAO = new FacturaDAO();
     int idFactura;
@@ -83,17 +83,17 @@ public class Controlador extends HttpServlet {
             nuevaFacturaDAO.add(nuevaFactura);
             acceso = listar;
             
-        }else if(action.equalsIgnoreCase("")){ //EDITAR
+        }else if(action.equalsIgnoreCase("editar")){ //EDITAR
             request.setAttribute("codFac", request.getParameter("idFactura"));
             
-        }else if(action.equalsIgnoreCase("")){ //ACTUALIZAR
+        }else if(action.equalsIgnoreCase("Actualizar")){ //ACTUALIZAR
             idFactura = Integer.parseInt(request.getParameter(""));
             String fechaFactura = request.getParameter("");
             String totalFactura = request.getParameter("");
             String codCliente = request.getParameter("");
             nuevaFactura.setFechaFactura(fechaFactura);
-            nuevaFactura.setTotalFactura(idFactura); // cambiar idfactura por TotalFactura 
-            nuevaFactura.setCodCliente(idFactura); // cambiar id factura por codCliente
+            nuevaFactura.setTotalFactura(Double.parseDouble(totalFactura)); // cambiar idfactura por TotalFactura 
+            nuevaFactura.setCodCliente(Integer.parseInt(codCliente)); // cambiar id factura por codCliente
             nuevaFacturaDAO.edit(nuevaFactura);
             acceso = listar;
              
