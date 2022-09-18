@@ -27,18 +27,18 @@
                             </div>
                             <div class="form-group">
                                 <label><U><B><font color="red">*REPUESTOS</font></B></U></label>
-                                <CENTER><font color="blue"><font size="3">Filtros</font></font></CENTER>    
-                                <CENTER><font color="blue"><font size="3">Baterias</font></font></CENTER>
-                                <CENTER><font color="blue"><font size="3">Bombillas</font></font></CENTER>
-                                <CENTER><font color="blue"><font size="3">Neumáticos</font></font></CENTER>
-                                <CENTER><font color="blue"><font size="3">Bujías</font></font></CENTER>
-                                <CENTER><font color="blue"><font size="3">Embragues</font></font></CENTER>
+                                <CENTER><a href="">Filtros</a></CENTER>
+                                <CENTER><a href="">Baterìas</a></CENTER>
+                                <CENTER><a href="">Bombillas</a></CENTER>
+                                <CENTER><a href="">Neumàticos</a></CENTER>
+                                <CENTER><a href="">Bujìas</a></CENTER>
+                                <CENTER><a href="">Embragues</a></CENTER>
                             </div>
                             <div class="form-group">
                                 <label><U><B><font color="red">*AUTOS</font></B></U></label>
-                                <CENTER><font color="blue"><font size="3">Velocidad</font></font></CENTER>
-                                <CENTER><font color="blue"><font size="3">Trabajo Pesado</font></font></CENTER>
-                                <CENTER><font color="blue"><font size="3">Todo Terreno</font></font></CENTER>
+                                <CENTER><a href="">Velocidad</a></CENTER>
+                                <CENTER><a href="">Trabajo Pesado</a></CENTER>
+                                <CENTER><a href="">Todo Terreno</a></CENTER>
                             </div>
                             <input type="submit" name="accion" value="Adquirir asesoría" class="btn btn-primary btn-block">
                         </form>
