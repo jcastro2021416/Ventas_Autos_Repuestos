@@ -51,7 +51,13 @@
     color: #8c6964;
 }
 
-
+.button1{
+    color: #0c0404;
+    background-color: #8e7a73;
+    border-color: #8e7a73;
+    border: 2px solid;
+    text-decoration: none;
+}
 
 img{
     border: 1px solid #ddd;
