@@ -8,6 +8,11 @@
     content: "";
 }
 
+.column{
+    float: left;
+    width: 50%;
+}
+
 .btn{
     display: inline-block;
     padding: 6px 12px;
