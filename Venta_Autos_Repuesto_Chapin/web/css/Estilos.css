@@ -96,10 +96,11 @@
 }
 
 img{
-    border: 1px solid #ddd;
+    border: 1px solid  #040404;
     border-radius: 4px;
     padding: 5px;
-    width: 150px;
+    height: auto;
+    max-width: 150px;
 }
 
 img:hover{
