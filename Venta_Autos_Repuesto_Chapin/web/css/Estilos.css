@@ -148,6 +148,10 @@ img:hover{
     border-collapse: collapse;
 }
 
+.table-bordered{
+    border: 1px solid  #553c3c;
+}
+
 .form-control{
     display: block;
     width: 100%;
