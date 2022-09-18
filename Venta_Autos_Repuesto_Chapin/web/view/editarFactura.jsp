@@ -23,11 +23,12 @@
             <h1>Editar Factura<h1>
             <form>
                 <strong>DPI:</strong>
-                <input class="form-control" type="text" name="txtDPI" placeholder="YYYY-MM-DD" value="<%=nuevaFactura.getFechaFactura()%>"><br><br>
+                <input class="form-control" type="text" name="txtFecha" placeholder="YYYY-MM-DD" value="<%=nuevaFactura.getFechaFactura()%>"><br><br>
                 <strong>Total Factura</strong>
                 <input class="form-control" type="text" name="txtTotal" placeholder="GTQ" value="<%=nuevaFactura.getTotalFactura()%>"><br><br>
                 <strong>Codigo Cliente</strong>
                 <input class="form-control" type="text" name="txtCliente" value="<%=nuevaFactura.getCodCliente()%>">>
+                <input type="hidden" name="txtIdFactura" value="<%=nuevaFactura.getIdFactura()%>">
                 <input class="btn btn-primary" type="submit" name="accion" value="Actualizar">
             </form>        
         </div>

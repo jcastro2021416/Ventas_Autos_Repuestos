@@ -87,10 +87,10 @@ public class Controlador extends HttpServlet {
             request.setAttribute("codFac", request.getParameter("idFactura"));
             
         }else if(action.equalsIgnoreCase("Actualizar")){ //ACTUALIZAR
-            idFactura = Integer.parseInt(request.getParameter(""));
-            String fechaFactura = request.getParameter("");
-            String totalFactura = request.getParameter("");
-            String codCliente = request.getParameter("");
+            idFactura = Integer.parseInt(request.getParameter("txtIdFactura"));
+            String fechaFactura = request.getParameter("txtFecha");
+            String totalFactura = request.getParameter("txtTotal");
+            String codCliente = request.getParameter("txtCliente");
             nuevaFactura.setFechaFactura(fechaFactura);
             nuevaFactura.setTotalFactura(Double.parseDouble(totalFactura)); // cambiar idfactura por TotalFactura 
             nuevaFactura.setCodCliente(Integer.parseInt(codCliente)); // cambiar id factura por codCliente
