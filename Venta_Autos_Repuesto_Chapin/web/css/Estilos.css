@@ -29,13 +29,11 @@
 }
 
 .button{
-    color: white;
-    padding: 15px 30px;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
-    transition-duration: 0.5s;
-    cursor: pointer;
+    color: #8c6964;
+    background-color: #3c3431;
+    border-color: #252321;
+    border: 2px solid;
+    text-decoration: none;
 }
 
 .button:hover{
