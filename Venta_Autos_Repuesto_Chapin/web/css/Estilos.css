@@ -37,8 +37,9 @@
 }
 
 .button:hover{
-    background-color: white;
-    color: black;
+    background-color:  #8e7a73;
+    color: #252321;
+    text-decoration: none;
     border: 2px solid;
 }
 
