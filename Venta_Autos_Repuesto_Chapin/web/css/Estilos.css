@@ -73,6 +73,28 @@
     text-decoration: none;
 }
 
+.button2{
+    color:#0c0404;
+    background-color: #8c8474;
+    border-color: #8e7a73;
+    text-decoration: none;
+    border: 2px solid;
+}
+
+.button2:hover{
+    color: #0c0404;
+    border: 2px solid;
+    background-color:  #736b64;
+    text-decoration: none;
+}
+
+.button2:active{
+    background-color: #a89c94;
+    text-decoration: none;
+    color: #8e7a73;
+    border: 2px solid;
+}
+
 img{
     border: 1px solid #ddd;
     border-radius: 4px;
