@@ -152,6 +152,21 @@ img:hover{
     border: 1px solid  #553c3c;
 }
 
+.table {
+    border-collapse: collapse !important;
+  }
+  .table td,
+  .table th {
+    background-color: #a49c8c !important;
+  }
+  .table-bordered th,
+  .table-bordered td {
+    border: 1px solid #553c3c !important;
+  }
+  table {
+  background-color: transparent;
+}
+
 .form-control{
     display: block;
     width: 100%;
