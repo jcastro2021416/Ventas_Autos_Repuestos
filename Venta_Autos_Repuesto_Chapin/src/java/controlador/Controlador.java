@@ -7,7 +7,6 @@ package controlador;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -15,12 +14,13 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  *
- * @author USER
+ * @author arria
  */
 public class Controlador extends HttpServlet {
 
     /**
-     * Processes requests for both HTTP <code>GET</code> and <code>POST</code> methods.
+     * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
+     * methods.
      *
      * @param request servlet request
      * @param response servlet response
@@ -29,42 +29,19 @@ public class Controlador extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-         String menu = request.getParameter("menu");
-         String accion = request.getParameter("accion");
-         if(menu.equals("Principal")){
-             request.getRequestDispatcher("Principal.jsp").forward(request, response);
-         }else if(menu.equals("Empleado")){
-             switch(accion){
-                 case "Listar":
-                 case "Agregar":
-                     String DPI = request.getParameter("txtDPIEmpleado");
-                     String nombres = request.getParameter("txtNombresEmpleado");
-                     String telefono = request.getParameter("txtTelefonoEmpleado");
-                     String est = request.getParameter("txtEstado");
-                     String user = request.getParameter("txtUsuario");
-                     request.getRequestDispatcher("Controlador?menu=Empleado&accion=Listar").forward(request, response);
-                     break;
-                     
-                 case "Editar":
-                     break;
-                 case "Atualizar":
-                     break;
-                 case "Eliminar":
-                     break;
-                     
-         } 
-             request.getRequestDispatcher("Empleado.jsp").forward(request, response);
-         }else if(menu.equals("Producto")){
-             request.getRequestDispatcher("Producto.jsp").forward(request, response);
-             
-         }else if(menu.equals("Clientes")){
-             request.getRequestDispatcher("Clientes.jsp").forward(request, response);
-         }else if(menu.equals("RegistraVenta")){
-             request.getRequestDispatcher("RegistrarVenta").forward(request, response);
-         }else if(menu.equals("Home")){
-             request.getRequestDispatcher("Principal.jsp").forward(request, response);
-         }
-         
+        response.setContentType("text/html;charset=UTF-8");
+        try (PrintWriter out = response.getWriter()) {
+            /* TODO output your page here. You may use following sample code. */
+            out.println("<!DOCTYPE html>");
+            out.println("<html>");
+            out.println("<head>");
+            out.println("<title>Servlet Controlador</title>");            
+            out.println("</head>");
+            out.println("<body>");
+            out.println("<h1>Servlet Controlador at " + request.getContextPath() + "</h1>");
+            out.println("</body>");
+            out.println("</html>");
+        }
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
