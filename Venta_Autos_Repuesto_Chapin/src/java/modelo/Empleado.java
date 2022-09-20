@@ -90,6 +90,10 @@ public class Empleado {
     public void setIdReparaciones(String idReparaciones) {
         this.idReparaciones = idReparaciones;
     }
+
+    public Object getUsuario() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
         
         
 }
