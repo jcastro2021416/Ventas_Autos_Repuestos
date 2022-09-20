@@ -8,6 +8,7 @@ import java.sql.ResultSet;
 
 
 public class EmpleadoDAO {
+    
         Conexion cn = new Conexion();
         Connection con;
         PreparedStatement ps;
@@ -29,6 +30,9 @@ public class EmpleadoDAO {
                     empleado.setDNI(rs.getString("idEmpleados"));
                     empleado.setNombres(rs.getString("nombresEmpleado"));
                     empleado.setApellidos(rs.getString("usuario"));
+                    empleado.setTelefono(rs.getString("telefono"));
+                    empleado.setDireccion(rs.getString("direccion"));
+                    empleado.setIdReparaciones(rs.getString("idReparaciones"));
                 }
             }catch(Exception e){
                 e.printStackTrace();
@@ -41,3 +45,4 @@ public class EmpleadoDAO {
         }
                  
 }
+
