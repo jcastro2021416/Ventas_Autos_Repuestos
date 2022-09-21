@@ -6,13 +6,13 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-public class PersonaDAO {
+public class PersonaDAO{
     Connection con;
     Conexion cn = new Conexion();
     PreparedStatement ps;
     ResultSet rs;
 
-    public Persona validar(Persona per) {
+    public Persona validar(Persona per){
         Persona persona = new Persona();
        int r=0;
         String sql="Select * from persona where Nombre=? and Usuario=?";
@@ -29,10 +29,9 @@ public class PersonaDAO {
                 per.setApellidos(rs.getString("Apellidos"));
                 per.setTelefono(rs.getString("Telefono"));   
             }
-               
-               
-        }catch (Exception e) {
-        e.printStackTrace();
+                    
+        }catch(Exception e){
+         e.printStackTrace();
         }
         return persona;   
         

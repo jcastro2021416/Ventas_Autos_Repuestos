@@ -3,21 +3,20 @@ package modelo;
 
 public class Persona {
     int DNI;
-    String nombres;
-    String apellidos;
-    String direccion;
-    String telefono;
+    private String nombres;
+    private String apellidos;
+    private String direccion;
+    private String telefono;
     
-    public Persona() {
-        
+    public Persona(){   
     }
     
-    public Persona(int id, String nom, String correo) {
+    public Persona(int DNI, String nombres, String apellidos, String direccion, String telefono){
        this.DNI = DNI;
-       this.nombres = nombres;
-       this.apellidos = apellidos;
-       this.direccion = direccion;
-       this.telefono = telefono;
+       this.nombres =nombres;
+       this.apellidos =apellidos;
+       this.direccion =direccion;
+       this.telefono =telefono;
        
     }
 
