@@ -21,7 +21,7 @@ import modelo.PersonaDAO;
  * @author arria
  */
 public class Validar extends HttpServlet {
-    PersonaDAO persona = new PersonaDAO();
+    PersonaDAO personaDAO = new PersonaDAO();
     Persona Persona = new Persona();
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -73,9 +73,22 @@ public class Validar extends HttpServlet {
      * @throws IOException if an I/O error occurs
      */
     @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+        
+        
+        String accion = request.getParameter("accion");
+        if(accion.equalsIgnoreCase("Ingresar"));
+        
+            String user = request.getParameter("txtUser");
+            String pass = request.getParameter("txtPass");
+            Persona = personaDAO.validar(user, pass);
+            if(Persona.getNombres() !=null){                         
+                request.setAttribute("nombres", Persona);
+                request.getRequestDispatcher("Controlador?menu=Principal").forward(request, response);
+            }else{
+                request.getRequestDispatcher("index.jsp").forward(request, response);
+            }
     }
 
     /**
