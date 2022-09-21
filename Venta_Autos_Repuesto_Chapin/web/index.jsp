@@ -15,7 +15,7 @@
     </head>
     <body>
         <div class="container col-col-3">
-            <form action="Controlador">
+            <form action="Validar" method="POST">
                 <div class="form-group text-center">
                 <img src="img/Logo.png" alt="80" width="80"><br>
                 <a>LOGIN</a>
