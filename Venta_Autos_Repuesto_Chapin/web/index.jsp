@@ -18,6 +18,7 @@
             <form action="Controlador">
                 <div class="form-group text-center">
                 <img src="img/Logo.png" alt="80" width="80"><br>
+                <a>LOGIN</a>
                 <p><strong>Bienvenidos a VentaAutosChapin</strong></p>
                 </div>
                 <div class="form-group">

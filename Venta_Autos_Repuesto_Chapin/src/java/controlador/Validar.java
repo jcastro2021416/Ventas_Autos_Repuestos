@@ -14,37 +14,40 @@ import javax.servlet.http.HttpServletResponse;
 import modelo.Persona;
 import modelo.PersonaDAO;
 
+
+
 /**
  *
  * @author arria
  */
-public class Controlador extends HttpServlet {
-    PersonaDAO dao=new PersonaDAO();
-    Persona p=new Persona();
-    int r;
-    
-    
+public class Validar extends HttpServlet {
+    PersonaDAO persona = new PersonaDAO();
+    Persona Persona = new Persona();
+    /**
+     * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
+     * methods.
+     *
+     * @param request servlet request
+     * @param response servlet response
+     * @throws ServletException if a servlet-specific error occurs
+     * @throws IOException if an I/O error occurs
+     */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-       String accion=request.getParameter("accion");
-       if(accion.equals("Ingresar")){
-           String nom=request.getParameter("txtUsuario");
-           String apellidos=request.getParameter("txtContraseña");
-           p.setNombres(nom);
-           p.setApellidos(apellidos);
-           dao.validar(p);
-           if(r==1){
-               request.getSession().setAttribute("Usuario", nom);
-               request.getSession().setAttribute("Contraseña", apellidos);
-               request.getRequestDispatcher("Principal.jsp").forward(request, response);
-           }else{
-               request.getRequestDispatcher("index.jsp").forward(request, response);
-               
-       }
+        try (PrintWriter out = response.getWriter()) {
+            /* TODO output your page here. You may use following sample code. */
+            out.println("<!DOCTYPE html>");
+            out.println("<html>");
+            out.println("<head>");
+            out.println("<title>Servlet Validaar</title>");            
+            out.println("</head>");
+            out.println("<body>");
+            out.println("<h1>Servlet Validaar at " + request.getContextPath() + "</h1>");
+            out.println("</body>");
+            out.println("</html>");
+        }
     }
-}
-
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
