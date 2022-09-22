@@ -20,7 +20,7 @@
             <form action="Validar" method="POST">
             <div class="form-group text-center">
                                 <h1>Login</h1>
-                                <img class="img" src="Image/Logo.png"><br><br>
+                                <img class="img" src="img/Logo.png"><br><br>
                                 <p><strong><h4>Venta de Repuestos AutosChapin</h4></strong></p>
                 </div>
                 <div class="form-group">
@@ -35,7 +35,7 @@
                 </div>
             </form>
            </div>
-              <img class="image-container" src="Image/Login.png" alt="">
+              <img class="image-container" src="css/Login.png" alt="">
           </div> 
           </div>
         </div>

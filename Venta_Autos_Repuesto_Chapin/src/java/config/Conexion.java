@@ -1,21 +1,27 @@
 
 package config;
 
-import java.sql.Connection;
+import com.mysql.jdbc.Connection;
 import java.sql.DriverManager;
 
-   
+
 public class Conexion {
-    Connection conexion; 
+    Connection  conexion;
+    
     
     public Connection Conexion(){
-    try{
-        Class.forName("com.mysql.jdbc.Driver");
-        conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/BaseDeDatos?useSSL=false", "root", "contraseña");
-    }catch(Exception e){
-        e.printStackTrace();
-        System.out.println("No se pudo establecer la conexión");
+        try{
+            Class.forName("com.mysql.jdbc.Driver");
+            conexion = (Connection) DriverManager.getConnection("jdbc:mysql://localhost:3306/DBVenta_Autos_Repuesto_Chapin?useSSL=false","root", "admin");
+        }catch(Exception e){
+            e.printStackTrace();
+            System.out.println("Error De Conexion");
+        }
+        
+        return conexion;
     }
-        return conexion; 
+
+    java.sql.Connection getConnection() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }

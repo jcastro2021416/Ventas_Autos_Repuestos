@@ -9,6 +9,6 @@ package modelo;
  *
  * @author USER
  */
-public class EmpleadoDAO {
+public class EmpleadoDAO  {    
     // VAN TODAS LAS CONSULTAS QUE VAS A HACER EN MYSQL
 }
