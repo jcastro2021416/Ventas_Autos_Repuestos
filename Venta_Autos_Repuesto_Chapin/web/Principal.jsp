@@ -26,7 +26,10 @@
                     <a style="margin-left: 30px;" class="btn btn-outline-light"  href="Controlador?menu=Factura" target="myFrame">Factura</a>
                   </li>
                   <li class="nav-item">
-                    <a style="margin-left: 30px;" class="btn btn-outline-light"  href="Controlador?menu=Autos" target="myFrame">Autos</a>
+                    <a style="margin-left: 30px;" class="btn btn-outline-light"  href="Controlador?menu=Autos" target="myFrame">Autos</a> <br>
+                  </li> 
+                  <li>
+                <a class="btn btn-danger" style="margin-left: 30px;" href="view/add.jsp">Agregar Nuevo Auto</a>
                   </li>
                   
                 </ul>
@@ -40,10 +43,11 @@
                   </button>
                    <div class="dropdown-menu text-center" aria-labellebdy="dropdownMenuButton">
                    <a class="dropdown-item" href="#">
-                      <img src="img/usuario.png" alt="50" height=" 100" width="100"/>
+                      <img src="Image/perfil-del-usuario (1).png" alt="50" height=" 100" width="100"/>
                     </a>  
                        <li class="nav-item"></a>
                   </li>
+                  
                     <a class="dropdown-item" href="#">${usuario.getNombreUsuario()}</a>
                     <a class="dropdown-item" href="#">usuario@gmail.com</a>
                     <div class="dropdown-divider"></div>
@@ -56,77 +60,8 @@
                 </div>
                     
           </nav>
-                    
-                   <%--  <div class="m-4" style="height: 650px;">
-                                <iframe name="myFrame" style="height: 50%; width: 50%">
-                                <a style="margin-left: 50px;" class="btn btn-outline-black"  href="Controlador?menu=Id_Autos" target="myFrame">Id_Autos</a>
-                           </iframe>
-                                <li class="nav-item">    
-                  </li>
-                    </div>
-                   --%>
-                   
-                   <%-- <div>
-                       <center>
-                           <iframe name="myFrame" style="height: 50%; width: 75%">
-                           <a style="margin-left: 20px;" class="btn btn-outline-light"  href="Controlador?menu=Home" target="myFrame">Id_Autos</a>
-                       </iframe>
-                       </center>
-                   </div>  --%>
-                   <%-- <div>
-                       <h1 class="text-center">Agregar autos</h1
-                   </div>
-                   <table class="table table-bordered">
-                       <thead>
-                           <tr>
-                                <th class="text-center text-primary">Id_auto</th>
-                                <th class="text-center text-primary">Matricula</th>
-                                <th class="text-center text-primary">Marca</th>
-                                <th class="text-center text-primary">Modelo</th>
-                                <th class="text-center text-primary">Color</th>
-                            </tr>
-                        </thead
-                   </table> --%>
-                   
-                    <center><div class="container">
-                     <div class="col-lg-3">
-                     <h1 class="text-center">Agregar Auto</h1>
-                     <form action="Controlador">
-                        <strong>Id_auto:</strong><br>
-                        <input class="form-control" type= "text" name="txtDPI"><br>
-                        <strong>Matricula:</strong><br><br>
-                        <input class="form-control" type="text" name="txtNombre"><br>
-                        <strong>Marca:</strong><br><br>
-                        <input class="form-control" type="text" name="txtNombre"><br>
-                        <strong>Modelo:</strong><br><br>
-                        <input class="form-control" type="text" name="txtNombre"><br>
-                        <strong>Color:</strong><br><br>
-                        <input class="form-control" type="text" name="txtNombre"><br>
-                        <input class="btn btn-primary" type="submit" name="accion" value="Agregar"><br>
-                     </form>
-                     </div></center>
-    
-    
-                    <center><div class="container">
-                     <div class="col-lg-3">
-                     <h1 class="text-center">Agregar Repuesto</h1>
-                     <form action="Controlador">
-                        <strong>Id_repuestos:</strong><br>
-                        <input class="form-control" type= "text" name="txtDPI"><br>
-                        <strong>Nombre</strong><br><br>
-                        <input class="form-control" type="text" name="txtNombre"><br>
-                        <strong>Stock</strong><br><br>
-                        <input class="form-control" type="text" name="txtNombre"><br>
-                        <strong>Modelo:</strong><br><br>
-                        <input class="form-control" type="text" name="txtNombre"><br>
-                        <strong>Color:</strong><br><br>
-                        <input class="form-control" type="text" name="txtNombre"><br>
-                        <input class="btn btn-primary" type="submit" name="accion" value="Agregar"><br>
-                     </form>
-                     </div></center>
-                    
-        
-        
+  
+                        
         
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
